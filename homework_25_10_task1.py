@@ -2,7 +2,7 @@ import math
 
 #Вспомогательная функция, чтобы округлять ответы до 3 значащих цифр
 def round_to_3(x):
-   return round(x, 2 - int(math.log10(abs(x))))
+   return round(x, 2 - math.floor(math.log10(abs(x))))
 def print_number(x):
     s = str(round_to_3(x))
     while s[-1] == '.' or s[-1] == '0':
