@@ -14,7 +14,7 @@ def z_func(s):
 curr_ind = 0
 indexes = []
 s = ""
-for word in input().split():
+for word in input("Введите слова через пробел" + "\n").split():
     if curr_ind > 0:
         indexes.append(curr_ind)
     s = s + word + '#'
